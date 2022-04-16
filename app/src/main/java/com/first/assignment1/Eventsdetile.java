@@ -110,7 +110,6 @@ public class Eventsdetile extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "delete fail", Toast.LENGTH_SHORT).show();
                 }
 
-
             }
         });
 
@@ -123,7 +122,6 @@ public class Eventsdetile extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 
 

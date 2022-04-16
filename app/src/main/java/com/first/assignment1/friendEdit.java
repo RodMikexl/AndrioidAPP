@@ -73,7 +73,6 @@ public class friendEdit extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
                 boolean jug = false;
                 jug = friendInfo.update(dataId,fname.getText().toString(),lname.getText().toString(), gender.getSelectedItem().toString(),
                         age.getValue(), address.getText().toString());
@@ -81,7 +80,6 @@ public class friendEdit extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "update success", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(friendEdit.this,displayFrienddetile.class);
                     String trans = String.valueOf(dataId);
-                    intent.putExtra("dataId", trans);
                     startActivity(intent);
                 }else{
                     Toast.makeText(getApplicationContext(), "update fail", Toast.LENGTH_SHORT).show();

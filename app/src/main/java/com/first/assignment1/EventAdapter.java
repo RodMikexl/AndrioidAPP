@@ -22,7 +22,6 @@ public class EventAdapter extends ArrayAdapter<EventList> {
         this.context = context;
         this.resource = resource;
     }
-
     private class ViewHolder {
         TextView name, date ,id,time;
         ImageView image;

@@ -41,27 +41,6 @@ public class FriendAdapter extends ArrayAdapter<String> {
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
 
-        if(convertView==null)
-        {
-            LayoutInflater inflater = (LayoutInflater) context
-                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView=inflater.inflate(R.layout.rowlayout, null);
-
-            viewHolder=new ViewHolder();
-            viewHolder.name=(TextView) convertView.findViewById(R.id.friendName);
-            viewHolder.image=(ImageView) convertView.findViewById(R.id.friendImage);
-            convertView.setTag( viewHolder);
-        }
-        else
-            viewHolder=(ViewHolder) convertView.getTag();
-
-
-        viewHolder.name.setText(arrayList.get(position));
-        viewHolder.image.setImageResource(Integer.parseInt(arrayList.get(position)) );
-
-
-        return convertView;
-    }
 
 }
 
